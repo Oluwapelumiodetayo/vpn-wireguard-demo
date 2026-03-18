@@ -20,22 +20,18 @@ This project demonstrates deploying a secure VPN using WireGuard on a cloud VM.
 - Network interface configuration
 - Encryption-based communication# WireGuard VPN Deployment
 
-## Overview
-This project demonstrates deploying a secure VPN using WireGuard on a cloud VM.
+- ## How to Connect (Demo)
 
-## What I Did
-- Installed WireGuard on Ubuntu EC2 instance
-- Generated public/private key pairs
-- Configured VPN interface (wg0)
-- Started encrypted tunnel on port 51820
+1. Install WireGuard
+2. Use the following config:
 
-## Tools Used
-- WireGuard
-- Linux (Ubuntu)
-- AWS EC2
+[Interface]
+PrivateKey = (client key)
 
+[Peer]
+PublicKey = (server public key)
+Endpoint = 51.20.18.204:51820
+AllowedIPs = 10.0.0.0/24
 
-## Key Takeaways
-- Secure VPN setup
-- Network interface configuration
+iguration
 - Encryption-based communication
