@@ -14,8 +14,6 @@ This project demonstrates deploying a secure VPN using WireGuard on a cloud VM.
 - Linux (Ubuntu)
 - AWS EC2
 
-## Proof
-(Add your screenshots here)
 
 ## Key Takeaways
 - Secure VPN setup
